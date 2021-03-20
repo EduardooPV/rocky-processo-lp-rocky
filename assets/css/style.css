@@ -4,6 +4,12 @@
     --yellow: #EFE60B;
 }
 
+body {
+    background-image: url(../img/web/bg.png);
+    background-size: cover;
+    background-position: center;
+}
+
 /* Configuring responsiveness to all containers */
 
 .container {
@@ -25,7 +31,7 @@
 }
 
 .header__logo {
-    margin: 1rem;
+    margin: 1rem 0;
     flex-grow: 2;
 }
 
@@ -59,10 +65,19 @@
             transition: 0.5s;
         }
 
+/*================= TITLES SECTIONS =================*/
+.section__titles {
+    font-weight: 700;
+    font-size: 2.5rem;
+            
+    margin: 3.5rem 0 4.5rem 0;
+}
 /*================= Section Initial =================*/
 
 .initial {
     background-position: 50% 0;
+    background-image: url(../img/web/s1\ ft1.png);
+    background-repeat: no-repeat;
     color: #ffffff;
 
     display: flex;
@@ -121,3 +136,83 @@
         transition: 0.5s;
     }
 
+    /*================= CONTENT IMAGE =================*/
+.content 
+
+/*================= ABOUT =================*/
+.about{ 
+    animation: AnimationLeftToRight 1s 1s 1;
+    padding-bottom: 4rem;
+}
+
+.about__description {
+    background-color: white;
+
+    padding: 2rem;
+    border: 1px solid;
+    box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.43);
+}
+
+.about__description p {
+    padding: 1rem;
+}
+
+/*================= CARDS =================*/
+.row {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-between
+}
+
+.row__card {
+    text-align: center;
+    
+    background-position: center center;
+    
+    border-radius: 20px;
+    margin: 0 25px 25px 0;
+    height: 450px;
+    width: 350px;
+}
+
+.box-container {
+    text-align: center;
+}
+
+.card__title {
+    color: var(--yellow);
+    font-weight: 700;
+    padding: 2.5rem;
+}
+
+.card__description {
+    color: white;
+    font-weight: 400;
+    padding: 1.5rem;
+}
+
+/*================= DIFFERENTAILS =================*/
+.medal-icon {
+    width: 7rem;
+    padding: 3rem 0 1rem 0;
+}
+
+.width {
+    width: 250px;
+    margin-right: 4rem;
+}
+
+
+
+/*ANIMATION */
+
+@keyframes AnimationLeftToRight{
+    0%{
+        transform: translate(-100vw)
+    }
+        
+    100%{
+        transform: translate(0)
+    }
+}
