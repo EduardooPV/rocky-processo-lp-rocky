@@ -1,4 +1,4 @@
-<h1 align="center"> Template site **ROCKY**</h1>
+<h1 align="center"> Template site ROCKY</h1>
 
 <h2 align="center" >🚧 Projeto em construção... 🚧</h2>
 
