@@ -21,11 +21,14 @@
     .header__menu, .header__logo--web{
         display: none;
     }
-    .header__logo--mobile{
+    .header__logo--modify {
+        background: url(../img/mobile/logo.png) center center no-repeat;
+        width: 170px;
+        height: 40px;
+        text-align: center;
+        margin: 0.2rem auto;
         display: block;
-        margin: 0.9rem auto;
-        width: 120px;
-        height: 30px;
+        padding: 20px;
     }
     .section__titles{
         margin: 4rem 0;
@@ -89,7 +92,7 @@
     }
 
     .card__description {
-        padding-bottom: 4rem;
+        padding: 0 2rem;
         font-size: calc(0.7em + 1vw);
     }
 
@@ -141,6 +144,7 @@
         position: absolute;
     }
     .arrow__up {
+        display: block;
         z-index: 1;
     }
 

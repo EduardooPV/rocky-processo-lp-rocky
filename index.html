@@ -15,7 +15,7 @@
     <link rel="icon" href="assets/img/global/favicon.ico" type="image/x-ico">
 
 
-    <!-- =========== Import files =========== -->
+    <!-- =========== Import CSS files =========== -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
@@ -24,43 +24,49 @@
 
 <body>
 
-    
-    <input onclick="ModalMenu.open()" id="menu-hamburguer" type="checkbox">
-    <label for="menu-hamburguer">
-        <nav class="menu">
-            <spam class="hamburguer"></spam>
-        </nav>
-    </label>
+    <!-- =========== Menu Hamburguer (Only phone resolution) =========== -->
+    <div class="menu__hamburguer">
 
-    <div class="modal-overlay2 modalmenu">
-        <div class="modalmenuopen">
-            <ul>
-                <li id="modal__img"><img  onclick="ModalMenu.close()" src="assets/img/global/exit.png" width="60px"alt=""></li>
-                <li><a onclick="ModalMenu.close()" href="#home">HOME</a></li>
-                <li><a href="#sobre"><s>SOBRE A ROCKY</s></a></li> 
-                <li><a href="#servicos"><s>SERVIÇOS</s></a></li>
-                <li><a href="#diferenciais"><s>DIFERENCIAIS</s></a></li>
-                <li><a href="#trabalhe-conosco"><s>TRABALHE CONOSCO</s></a></li>
-                <li><a href="#contato"><s>CONTATO</s></a></li>
-                <li><a href="https://blog.rocky.ag/pagina/1" target="_blank"><s>BLOG</s></a></li>
-            </ul>
+        <input onclick="ModalMenu.open()" id="menu-hamburguer" type="checkbox">
+
+        <label for="menu-hamburguer">
+            <nav class="menu">
+                <spam class="hamburguer"></spam>
+            </nav>
+        </label>
+
+        <!-- === Modal when opening the hamburger menu === -->
+        <div class="modal__overlay modalmenu">
+            <div class="modalmenuopen">
+                <ul>
+                    <li id="modal__img"><img onclick="ModalMenu.close()" src="assets/img/global/exit.png" width="50px"
+                            alt=""></li>
+                    <li><a onclick="ModalMenu.close()" href="#home">HOME</a></li>
+                    <li><a href="#sobre"><s>SOBRE A ROCKY</s></a></li>
+                    <li><a href="#servicos"><s>SERVIÇOS</s></a></li>
+                    <li><a href="#diferenciais"><s>DIFERENCIAIS</s></a></li>
+                    <li><a href="#trabalhe-conosco"><s>TRABALHE CONOSCO</s></a></li>
+                    <li><a href="#contato"><s>CONTATO</s></a></li>
+                    <li><a href="https://blog.rocky.ag/pagina/1" target="_blank"><s>BLOG</s></a></li>
+                </ul>
+            </div>
         </div>
+
     </div>
+
+    <!-- =========== Arrow to go back to the beginning =========== -->
     <div class="arrow">
         <a href="#"> ]
-            <img class="arrow__up" src="assets/img/mobile/arrow-up.jpg" alt="Seta para voltar para o inicio">
+            <img class="arrow__up" src="assets/img/mobile/arrow-up.jpg" alt="Arrow to go back to the beginning">
         </a>
     </div>
     <!-- =========== Header (Logo Image and Navbar) =========== -->
     <header class="header">
-        
         <div class="header__content container">
+
             <div class="header__logo">
-                <a href="#">
-                    <img class="header__logo--mobile" src="assets/img/mobile/logo.png" alt="Logo Rocky" width="170" height="40">
-                </a>
                 <a href="#" title="Link home page">
-                    <img id="img-logo" class="header__logo--web" src="assets/img/web/logo.png" alt="Logo Rocky" width="170" height="40">
+                    <img id="img-logo" class="header__logo--modify" src="assets/img/web/logo.png" alt="Logo Rocky" width="170" height="40">
                 </a>
             </div>
 
@@ -84,28 +90,35 @@
                     <a href="https://blog.rocky.ag/pagina/1" target="_blank">BLOG</a>
                 </li>
             </ul>
+
         </div>
     </header>
 
     <article>
-        <!-- =========== Content initial =========== -->
+        <!-- =========== Content initial (Presentation) =========== -->
         <section class="initial ">
             <div class="initial__content">
+                
                 <h2 class="initial__title">FULL DIGITAL PERFORMANCE</h2>
+
                 <div class="initial__description">
                     <p>modi reprehenderit, vel? Et sit in aut <span class="initial__description--color">veniam,
                             voluptatem obcaecati autem?</span></p>
                     <p>quaerat fuga inventore, repudiandae? Debitis mollitia libero optio,tenetur ab quis?</p>
                 </div>
+
                 <a class="button" href="#contact">ENTRE EM CONTATO AGORA</a>
+
             </div>
         </section>
 
-        <!-- =========== Content About =========== -->
+        <!-- =========== Content About (Important information about a rocky) =========== -->
         <section id="sobre" class="about container">
-            <h2  class="section__titles">
+
+            <h2 class="section__titles">
                 SOBRE
             </h2>
+
             <div class="about__description">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quasi ut nam minima cumque
                     perferendis tempore aliquid placeat vel fugiat, odio eum voluptatibus quas praesentium accusamus
@@ -113,13 +126,14 @@
                     Rem nihil explicabo, fuga repellendus minus sequi adipisci quae alias laboriosam distinctio
                     eaque minima, nam earum! Voluptas quo iure sapiente laudantium iste magnam, dolorem repudiandae,
                     quia dolores, tempore nesciunt assumenda.</p>
-                <p><strong>
-                        Nam, aliquid dignissimos. Totam ad, reiciendis ab voluptas autem illo dignissimos sit eaque
+
+                <p><strong>Nam, aliquid dignissimos. Totam ad, reiciendis ab voluptas autem illo dignissimos sit eaque
                         repellendus obcaecati. Laudantium rem qui fugiat, aspernatur eligendi ratione excepturi
                         facilis distinctio dolor aut error eveniet repellat!
                         Porro officiis, nihil sunt, consectetur quos debitis sed suscipit alias, dolorem magnam
                         explicabo! Dolorem odio et ipsum, maiores, in fugit blanditiis animi sed error voluptatibus
-                        harum quia amet debitis quo?</strong></p>
+                    harum quia amet debitis quo?</strong></p>
+
                 <p> Tenetur fugit optio, repellat exercitationem, obcaecati ut provident reprehenderit aperiam natus
                     laboriosam quibusdam quod. Pariatur, mollitia? Quisquam repellendus nisi vitae molestiae,
                     explicabo magnam rem dolorum enim ducimus alias cupiditate minus?
@@ -129,52 +143,83 @@
             </div>
         </section>
 
-        <!-- =========== Content Services =========== -->
+        <!-- =========== Content Services (Presentation of some services) =========== -->
         <section id="servicos" class="services container">
+
             <h2 class="section__titles">
                 SERVIÇOS
             </h2>
-            <div class="box-container ">
-                <div class="row ">
+
+            <div class="services__container ">
+                <div class="row">
+
+                    <!-- Cover letters with your description -->
                     <div class="row__card__services row__services__one">
-                        <h3 class="card__title">SERVIÇOS</h3>
-                        <p class="card__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, veniam ipsa autem deleniti quae dolorum explicabo sapiente. Excepturi quis exercitationem deleniti, molestias minus nisi earum, qui pariatur autem quaerat laboriosam.</p>
-                        <p class="card__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, veniam ipsa </p>
+
+                        <h3 class="card__title">
+                            SERVIÇOS
+                        </h3>
+
+                        <p class="card__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam,
+                            veniam ipsa autem deleniti quae dolorum explicabo sapiente. Excepturi quis exercitationem
+                            deleniti, molestias minus nisi earum, qui pariatur autem quaerat laboriosam.</p>
                     </div>
+
                     <div class="row__card__services row__services__two">
-                        <h3 class="card__title">Mídia Digital de Performance</h3>
-                        <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ipsum consequatur expedita facere molestias, cum dolorem. Tempore, laborum iure cupiditate atque voluptate temporibus consequuntur natus, optio, voluptates voluptas quod nihil?</p>
-                        <p class="card__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam.</p>
+                        <h3 class="card__title">
+                            Mídia Digital de Performance
+                        </h3>
+
+                        <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+                            ipsum consequatur expedita facere molestias, cum dolorem. Tempore, laborum iure cupiditate
+                            atque voluptate temporibus consequuntur natus, optio, voluptates voluptas quod nihil?</p>
+                        </p>
                     </div>
+
                     <div class="row__card__services row__services__three">
-                        <h3 class="card__title">Implementações Tecnológicas</h3>
-                        <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas fuga odio nihil dolorem repudiandae cupiditate cum odit dolorum quaerat magni accusamus harum consequuntur, iste in deleniti ex dolores. Accusamus, aut?</p>
-                        <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                        <h3 class="card__title">
+                            Implementações Tecnológicas
+                        </h3>
+
+                        <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas fuga
+                            odio nihil dolorem repudiandae cupiditate cum odit dolorum quaerat magni accusamus harum
+                            consequuntur, iste in deleniti ex dolores. Accusamus, aut?</p>
                     </div>
+
                 </div>
             </div>
         </section>
 
-        <!-- =========== Content Differentials =========== -->
+        <!-- =========== Content Differentials (Differential points in the company) =========== -->
         <section id="diferenciais" class="diferentails container">
+
             <h2 class="section__titles">
                 DIFERENCIAIS
             </h2>
-            <div class="box-container">
+
+
+            <div class="services__container">
                 <div class="row">
+
+                    <!-- Differential letter with its description -->
                     <div class="row__card__diferentails row__differentials__one">
                         <img class="medal-icon" src="assets/img/global/medal.png" alt="Medal Icon">
+
                         <p class="card__description">Lorem ipsum harum explicabo nobis doloribus! Ullam, ea. Sunt sed
                             doloribus deserunt molestiae voluptatibus consequuntur voluptatem mollitia eos magnam?</p>
 
                     </div>
                     <div class="row__card__diferentails row__differentials__two">
                         <img class="medal-icon" src="assets/img/global/medal.png" alt="Medal Icon">
-                        <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ducimus, id qsitatibus obcaecati hic expedita rerum illum doloribus repudiandae.</p>
+
+                        <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                            ducimus, id qsitatibus obcaecati hic expedita rerum illum doloribus repudiandae.</p>
 
                     </div>
                     <div class="row__card__diferentails row__differentials__three">
                         <img class="medal-icon" src="assets/img/global/medal.png" alt="Medal Icon">
+
                         <p class="card__description">Lorem ipsum harum explicabo nobis doloribus! Ullam, ea. Sunt sed
                             doloribus deserunt molestiae voluptatibus consequuntur voluptatem mollitia eos magnam?</p>
 
@@ -183,44 +228,60 @@
             </div>
         </section>
 
-        <!-- =========== Footer =========== -->
-        <section class="footer ">
+        <!-- =========== Footer (Contacts and a form) =========== -->
+        <section id="contato" class="footer ">
             <div id="yellow"></div>
+
+            <!-- =========== Location and contact information =========== -->
             <div class="footer__contats container">
                 <img src="assets/img/global/logo-facebookAndLinkedin.png" alt="Logo Rocky">
+
                 <div class="footer__content">
                     <div class="footer__localization">
                         <div class="footer__emailNumber">
+
                             <div class="footer__email">
                                 <img src="assets/img/global/email.png" style="width: 1.4rem;" alt="Icon email">
                                 <span>contato@rocky.ag</span>
                             </div>
+
                             <div class="footer__number">
                                 <img src="assets/img/global/telephone.png " style="width: 1.3rem;" alt="Icon Telephone">
                                 <span>(15) 3321-1105</span>
                             </div>
+
                         </div>
                         <div class="footer__gps">
                             <img src="assets/img/global/gps.png" style="width: 1.4rem;" alt="Icon Gps">
                             <span>R. Romeu do Nascimento, 247 - Jardim Portal da Colina, Sorocaba - SP 18047-410 - 2º andar</span>
                         </div>
+
                     </div>
-                    <div id="contato" class="footer__texts">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error dolores id eveniet asperiores sit
-                            sequi enim repellendus consequuntur repudiandae praesentium nihil voluptates magnam, eligendi
+                    <div class="footer__texts">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error dolores id eveniet asperiores
+                            sit
+                            sequi enim repellendus consequuntur repudiandae praesentium nihil voluptates magnam,
+                            eligendi
                             facere placeat voluptatum. Quo, iure natus!</p>
+
                         <p class="contats__descrtiption--yellow">Quidem hic quo atque eius nostrum ex inventore, et
                             repellendus porro! Eligendi mollitia error nesciunt odio optio ipsum quos ullam consequuntur
                             facere iusto enim, eveniet quisquam hic placeat voluptatum! Nobis.</p>
+
                         <p class="contats__descrtiption--blue">Ab illum nihil odio quaerat, impedit quos eum voluptates,
-                            suscipit doloribus sed a saepe autem, repellendus culpa. Cum cupiditate hic libero et nesciunt
+                            suscipit doloribus sed a saepe autem, repellendus culpa. Cum cupiditate hic libero et
+                            nesciunt
                             eum ad. Blanditiis quis quos accusantium non.</p>
-                        <p class="contats__termos"><a   href="https://rocky.ag/termo-de-uso-e-politicas-de-privacidade/" target="_blank">Termos de uso e Politícas de Privacidade</a></p>
+
+                        <p class="contats__termos"><a href="https://rocky.ag/termo-de-uso-e-politicas-de-privacidade/" target="_blank">Termos de uso e Politícas de Privacidade</a></p>
+
                     </div>
                 </div>
             </div>
 
+            <!-- =========== Form =========== -->
             <div id="contact" class="footer__form">
+
                 <form class="form__content" method="post" action="">
                     <input id="nome" type="text" required name=nome placeholder="Nome" />
                     <input id="email" type="text" required name=email placeholder="E-mail">
@@ -228,12 +289,14 @@
                     <input type="text" type="text" required name=mensagem placeholder="Mensagem">
                     <input id="form__button" type="textarea" value="ENVIAR MENSSAGEM">
                 </form>
+
             </div>
-        <div id="yellow"></div>
+            <div id="yellow"></div>
         </section>
 
     </article>
 
+    <!-- =========== Import JavaScript files =========== -->
     <script type="text/javascript" src="script/script.js"></script>
 </body>
 

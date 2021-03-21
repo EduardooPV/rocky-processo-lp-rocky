@@ -1,7 +1,7 @@
 const ModalMenu = {
     open() {
         document
-            .querySelector('.modal-overlay2.modalmenu')
+            .querySelector('.modal__overlay.modalmenu')
             .classList.add('active2')
             document
             .querySelector('.hamburguer')
@@ -10,7 +10,7 @@ const ModalMenu = {
 
     close() {
         document
-            .querySelector('.modal-overlay2.modalmenu')
+            .querySelector('.modal__overlay.modalmenu')
             .classList.remove('active2')
             document
             .querySelector('.hamburguer')
