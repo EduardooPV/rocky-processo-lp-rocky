@@ -10,11 +10,11 @@
     }
     .header__logo--mobile{
         display: block;
-        margin: 0.6rem auto;
-        top: 0;
+        margin: 0.9rem auto;
+        width: 120px;
+        height: 30px;
     }
     .section__titles{
-        font-size: 3rem;
         margin: 4rem 0 4rem 0;
     }
 	
@@ -34,38 +34,62 @@
     }
 
     .row__card {
-        background-size: 900px;
+        background-size: 800px;
         width: 90vw;
-        margin: 10px 0;
-        height: 35vh;
+        margin: 30px 0;
+        height: 55vh;
         max-height: 700px;
         max-width: 700px;
     }
 
-    .row__background__one {
+    .row__services__one {
         background-image: url(../img/mobile/s3\ ft1.png);
     }
-    .row__background__two {
+    .row__services__two {
         background-image: url(../img/mobile/s3\ ft2.png);
     }
-    .row__background__three {
+    .row__services__three {
         background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/mobile/s3\ ft3.png);
     }
+
+
+    .row__differentials__one {
+        background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/mobile/s4\ ft1.png)
+    }
+    .row__differentials__two {
+        background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/mobile/s4\ ft2.png)
+    }
+    .row__differentials__three {
+        background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/mobile/s4\ ft3.png)
+    }
+
+
     .card__title {
         padding: 1.2rem 0 1rem 0;
+        font-size: calc(1.2em + 1vw);
     }
 
     .card__description {
-        padding: 1rem;
-        font-size: 0.9rem;
+        padding: 0.5rem 0.6rem;
+        font-size: calc(0.8em + 1vw);
     }
 
+    .about__description {
+        padding: 0.5rem;
+    }
 
+    .header__movescroll {
+        display: none;
+    }
     
+
+
 
     .footer__contats, .footer__form {
         width: 100%;
         max-width: none;
+        margin: 0;
+        padding: 1.5rem;
     }
 
     .footer__contats > span p{
@@ -87,7 +111,29 @@
         display: flex;
     }
 
+    .footer__gps img{
+        height: 23px;
+    }
+
     .footer__texts p {
         font-size: 0.9rem;
+    }
+
+    .medal-icon {
+        padding: 1rem;
+    }
+}
+
+@media only screen and (min-width: 1100px) { 
+    .footer__form, .footer__contats {
+        max-width: 400px;
+        margin: 2rem 3em;
+    }
+}
+
+@media only screen and (min-width: 1400px) { 
+    .footer__form, .footer__contats {
+        max-width: 400px;
+        margin: 2rem 5em;
     }
 }

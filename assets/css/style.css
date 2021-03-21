@@ -189,8 +189,7 @@ align-items: center
 
 .header__movescroll {
     background: white;
-    transition: 0.75s;
-
+    transition: 0.5s;
 }
 
 .header__movescroll a {
@@ -238,17 +237,19 @@ align-items: center
 
 .initial {
     text-align: center;
-    position: a;
 }
 
 .initial__title {
     font-weight: 800;
-    font-size: 8vw;
+    font-size: 9vw;
     animation: AnimationLeftToRight 1s 1s 1;
 }
 
 .initial__description {
     margin: 4rem 1rem 0 ;
+    font-size: 2vw;
+    font-size: calc(1em + 1vw);
+    animation: AnimationRightToLeft 1s 1s 1;
 }
 
 .initial__description--color {
@@ -268,6 +269,8 @@ align-items: center
 
     border-radius: 50px;
     opacity: 0.8;
+
+    animation: AnimationDownToUp 1s 1s 1;
 }
 
     .button:hover {
@@ -310,8 +313,15 @@ align-items: center
     
     border-radius: 40px;
     margin: 0 25px 25px 0;
-    max-height: 379px;
+    width: 40vw;
+    max-height: 400px;
     max-width: 380px;
+
+    box-shadow: 1px 1px 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
 
 }
 
@@ -331,15 +341,15 @@ align-items: center
     padding: 1.5rem;
 }
 
-.row__background__one {
+.row__services__one {
     background-image: url(../img/web/s3\ ft1.png);
 }
 
-.row__background__two {
+.row__services__two {
     background-image: url(../img/web/s3\ ft2.png)
 }
 
-.row__background__three {
+.row__services__three {
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/web/s3\ ft3.png)
 }
 
@@ -347,11 +357,23 @@ align-items: center
 
 /*================= DIFFERENTAILS =================*/
 .diferentails {
-
+    margin-bottom: 2rem;
 }
 .medal-icon {
-    width: 7rem;
+    width: 25vw;
+    max-width: 10rem;
+    min-width: 8rem;
     padding: 3rem 0 1rem 0;
+}
+
+.row__differentials__one {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/web/s4\ ft1.png)
+}
+.row__differentials__two {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/web/s4\ ft2.png)
+}
+.row__differentials__three {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/web/s4\ ft3.png)
 }
 
 
@@ -370,13 +392,13 @@ align-items: center
 
 /*================= FOOTER__CONTATS AND DESCRIPTION =================*/
 .footer__contats {
-    width: 300px;
-    margin: 2rem ;
+    width: 90vw;
+    margin: 2rem 5rem ;
 }
 
 
 .footer img {
-    width: 100%;   
+    width: 100%;  
 }
 
 .footer__localization {
@@ -397,13 +419,12 @@ align-items: center
 
 .footer__email, 
 .footer__number {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     display: inline;
 }
 
 .footer__gps {
-    font-size: 0.6rem;
-    display: flex;
+    font-size: 0.9rem;
 }
 
 .footer__texts p {
@@ -429,15 +450,14 @@ align-items: center
 /*================= FOOTER__FORM =================*/
 .footer__form {
     background-color: #818181;
-    width: 50%;
-    max-width: 330px;
-    margin: rem ;
+    width: 90%;
+    margin: 0rem 5rem ;
     padding: 20px;
 
 }
 
 .form__content input:nth-child(4) {
-height: 130px;
+height: 230px;
 }
 
 #form__button {
@@ -469,6 +489,26 @@ height: 130px;
 @keyframes AnimationLeftToRight{
     0%{
         transform: translate(-100vw)
+    }
+        
+    100%{
+        transform: translate(0)
+    }
+}
+
+@keyframes AnimationRightToLeft{
+    0%{
+        transform: translate(100vw)
+    }
+        
+    100%{
+        transform: translate(0)
+    }
+}
+
+@keyframes AnimationDownToUp{
+    0%{
+        transform: translateY(100vh)
     }
         
     100%{

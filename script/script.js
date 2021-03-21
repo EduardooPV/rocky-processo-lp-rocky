@@ -25,8 +25,15 @@ const Scroll = {
      scrollslowmotion() {
         if (window.scrollY !== 0) {
             document.querySelector('.header').classList.add('header__movescroll')
+
+            let img = document.querySelector('#img-logo')
+            img.setAttribute('src', './assets/img/web/logo-black-movescroll.png')
+            
         } else {
             document.querySelector('.header').classList.remove('header__movescroll')
+
+            let img = document.querySelector('#img-logo')
+            img.setAttribute('src', './assets/img/web/logo.png')
         }
     }
 }
