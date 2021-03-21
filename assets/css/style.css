@@ -6,6 +6,10 @@
     --yellow: #EFE60B;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-image: url(../img/web/bg.png);
     background-size: cover;
@@ -28,19 +32,10 @@ align-items: center
 
 .menu {
     display: none;
-    background: white;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     position: absolute;
-    margin: 0.5rem;
     cursor: pointer;
-    box-shadow: 0 0 0 0  #fff, 0 0 0 0  #fff;
-}
-
-.menu:hover {
-    box-shadow: 0 0 0 8px  #fff, 0 0 0 8px  #fff;
-    transition: box-shadow 0.5s ease-in-out;
 }
 
 .hamburguer {
@@ -49,10 +44,8 @@ align-items: center
     background: white;
     width: 40px;
     height: 5px;
-    top: 30px;
+    top: 36px;
     left: 15px;
-    transition: .5s ease-in-out;
-    z-index: 9999;
 }
 
 .hamburguer.remove {
@@ -134,7 +127,15 @@ align-items: center
 
 
 /*================= Header =================*/
- 
+.arrow__up {
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    border-radius: 50% ;
+    right: 2rem;
+    bottom: 2rem;
+} 
+
 .header {
     position: fixed;
     width: 100vw;
@@ -361,14 +362,14 @@ align-items: center
     color: var(--yellow);
     font-weight: 700;
     font-size: 2rem;
-    padding: 2.5rem;
+    padding: 1.5rem;
 }
 
 .card__description {
     color: white;
     font-weight: 400;
     font-size: 1.1rem;
-    padding: 1.5rem;
+    padding: 0;
 }
 
 .row__services__one {

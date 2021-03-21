@@ -32,8 +32,9 @@
     }
 	
     .menu {
+        background-color: transparent;
         display: block;
-        padding: 0.2rem;
+        z-index: 2;
     }
 
     .row{
@@ -88,7 +89,7 @@
     }
 
     .card__description {
-        padding: 4rem;
+        padding-bottom: 4rem;
         font-size: calc(0.7em + 1vw);
     }
 
@@ -136,7 +137,12 @@
 
 
 
-
+    .arrow {
+        position: absolute;
+    }
+    .arrow__up {
+        z-index: 1;
+    }
 
 
     
