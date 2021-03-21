@@ -1,0 +1,84 @@
+
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+    html {
+        font-size: 0.9rem;
+    }
+    .header__menu, .header__logo--web{
+        display: none;
+    }
+    .header__logo--mobile{
+        display: block;
+        margin: 0.6rem auto;
+        top: 0;
+    }
+    .section__titles{
+        font-size: 3rem;
+        margin: 4rem 0 4rem 0;
+    }
+	
+    .menu {
+        display: flex;
+        align-items: center;
+        justify-content:center;  
+    }
+
+    .row{
+        width: 90%;
+        margin: 0;
+        display: block;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .row__card {
+        background-size: 900px;
+        width: 90vw;
+        margin-right: 20px;
+        height: 35vh;
+        max-height: 700px;
+        max-width: 700px;
+    }
+
+    .row__background__one {
+        background-image: url(../img/mobile/s3\ ft1.png);
+    }
+    .row__background__two {
+        background-image: url(../img/mobile/s3\ ft2.png);
+    }
+    .row__background__three {
+        background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/mobile/s3\ ft3.png);
+    }
+
+
+
+    .header {
+        position: absolute;
+    }
+
+    .footer__contats, .footer__form {
+        width: 100%;
+        max-width: none;
+    }
+
+    .footer__contats > span p{
+        font-size: 1.4rem;
+    }
+
+    .footer__email, 
+    .footer__number {
+        font-size: 1.2rem;
+        display: inline;
+    }
+
+    .footer__gps {
+        font-size: 1.2rem;
+        display: flex;
+    }
+
+    .footer__texts p {
+        font-size: 0.9rem;
+    }
+}

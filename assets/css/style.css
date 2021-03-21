@@ -1,3 +1,4 @@
+@import url('responsive.css');
 /*================= Collors =================*/
 :root {
     --lightblue: #1cd4e9;
@@ -13,15 +14,130 @@ body {
 /* Configuring responsiveness to all containers */
 
 .container {
-	margin: 0 100px;
+    margin: 0 5vw;
+    max-width: 1300px;
 }
+
+article {
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center
+}
+
+.menu {
+    display: none;
+    background: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    margin: 0.5rem;
+    cursor: pointer;
+    box-shadow: 0 0 0 0  #fff, 0 0 0 0  #fff;
+}
+
+.menu:hover {
+    box-shadow: 0 0 0 8px  #fff, 0 0 0 8px  #fff;
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+.hamburguer {
+    position: relative;
+    display: block;
+    background: white;
+    width: 40px;
+    height: 5px;
+    top: 30px;
+    left: 15px;
+    transition: .5s ease-in-out;
+    z-index: 9999;
+}
+
+.hamburguer.remove {
+    opacity: 0;            /* Retirando o Modal da tela */
+    visibility: hidden;
+}
+
+.hamburguer:before,
+.hamburguer:after {
+    background: white;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: .5s ease-in-out;
+}
+
+.hamburguer:before {
+    top: -10px;
+}
+
+.hamburguer::after {
+    bottom: -10px;
+}
+
+#menu-hamburguer {
+    display: none;
+}
+
+
+.modal-overlay2 {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    opacity: 0;            /* Retirando o Modal da tela */
+    visibility: hidden;
+
+    z-index: 9;
+}
+
+.modal-overlay2.active2 {
+    opacity: 1;
+    visibility: visible; /* Voltando a aparecer na tela */
+    
+}
+
+.modalmenuopen {
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10.0px );
+    border-radius: 0 20px 20px 0;
+    padding-top: 0.1rem;
+    position: relative;
+    width: 90%;
+    max-width: 300px;
+    height: 550px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.modalmenuopen li {
+    margin: 1.5rem;
+}
+
+
+.modalmenuopen a {
+    color: white;
+}
+
+#modal__img {
+    text-align: right;
+    margin: 0.5rem;
+}
+
+
 
 /*================= Header =================*/
  
 .header {
     position: fixed;
     width: 100vw;
-    z-index: 999;
+    z-index: 1;
 }
 
 .header__content {
@@ -33,11 +149,15 @@ body {
 .header__logo {
     margin: 1rem 0;
     flex-grow: 2;
+    z-index: 9;
+}
+
+.header__logo--mobile {
+    display: none;
 }
 
 .header__menu {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -70,7 +190,7 @@ body {
     font-weight: 700;
     font-size: 2.5rem;
             
-    margin: 3.5rem 0 4.5rem 0;
+    margin: 3.5rem 0 5.5rem 0;
 }
 /*================= Section Initial =================*/
 
@@ -78,6 +198,7 @@ body {
     background-position: 50% 0;
     background-image: url(../img/web/s1\ ft1.png);
     background-repeat: no-repeat;
+    background-size: cover;
     color: #ffffff;
 
     display: flex;
@@ -86,30 +207,24 @@ body {
     margin-bottom: 1rem;
     height: 100vh;
 
+    justify-content: center;
     align-items: center;
     text-align: center;
 }
 
-.initial__title {
-    font-weight: 800;
-    font-size: 5rem;
-    animation: initialTitle 1s 1s 1;
+.initial {
+    text-align: center;
+    position: a;
 }
 
-    @keyframes initialTitle{
-        0%{
-            transform: translate(-100vw)
-        }
-            
-        100%{
-            transform: translate(0)
-        }
-    }
+.initial__title {
+    font-weight: 800;
+    font-size: 8vw;
+    animation: AnimationLeftToRight 1s 1s 1;
+}
 
 .initial__description {
-    margin-top: 4rem;
-
-    font-size: small;
+    margin: 4rem 1rem 0 ;
 }
 
 .initial__description--color {
@@ -117,7 +232,7 @@ body {
 }
 
 /*================= BUTTON CONTATO =================*/
-.initial__button {
+.button {
     text-decoration: none;
     font-weight: 700;
     background: var(--lightblue);
@@ -131,7 +246,7 @@ body {
     opacity: 0.8;
 }
 
-    .initial__button:hover {
+    .button:hover {
         opacity: 1;
         transition: 0.5s;
     }
@@ -141,13 +256,12 @@ body {
 
 /*================= ABOUT =================*/
 .about{ 
-    animation: AnimationLeftToRight 1s 1s 1;
-    padding-bottom: 4rem;
+    margin: 1rem;
 }
 
 .about__description {
     background-color: white;
-
+    animation: AnimationLeftToRight 1s 1s 1;
     padding: 2rem;
     border: 1px solid;
     box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.43);
@@ -162,7 +276,7 @@ body {
     display: inline-flex;
     flex-wrap: wrap;
     margin: 0 auto;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 .row__card {
@@ -170,10 +284,11 @@ body {
     
     background-position: center center;
     
-    border-radius: 20px;
+    border-radius: 40px;
     margin: 0 25px 25px 0;
-    height: 450px;
-    width: 350px;
+    max-height: 379px;
+    max-width: 380px;
+
 }
 
 .box-container {
@@ -192,18 +307,136 @@ body {
     padding: 1.5rem;
 }
 
+.row__background__one {
+    background-image: url(../img/web/s3\ ft1.png);
+}
+
+.row__background__two {
+    background-image: url(../img/web/s3\ ft2.png)
+}
+
+.row__background__three {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/web/s3\ ft3.png)
+}
+
 /*================= DIFFERENTAILS =================*/
+.diferentails {
+
+}
 .medal-icon {
     width: 7rem;
     padding: 3rem 0 1rem 0;
 }
 
-.width {
-    width: 250px;
-    margin-right: 4rem;
+
+
+/*================= FOOTER =================*/
+.footer {
+    background-color: #191919;
+    color: white;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 
+/*================= FOOTER__CONTATS AND DESCRIPTION =================*/
+.footer__contats {
+    width: 300px;
+    margin: 2rem ;
+}
+
+
+.footer img {
+    width: 100%;   
+}
+
+.footer__localization {
+    margin: 2rem 0;
+}
+
+.footer__emailNumber {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.footer__emailNumber img, 
+.footer__gps img{
+    margin: 0 0.8rem -0.2rem 0;
+}
+
+.footer__email, 
+.footer__number {
+    font-size: 0.7rem;
+    display: inline;
+}
+
+.footer__gps {
+    font-size: 0.6rem;
+    display: flex;
+}
+
+.footer__texts p {
+    font-size: 0.7rem;
+    margin-bottom: 1rem;
+}
+
+.contats__descrtiption--yellow {
+    color: var(--yellow);
+}
+
+
+.contats__descrtiption--blue {
+    color: var(--lightblue)
+}
+
+#yellow {
+    width: 100%;
+    height: 50px;
+    background-color: var(--yellow);
+}
+
+/*================= FOOTER__FORM =================*/
+.footer__form {
+    background-color: #818181;
+    width: 50%;
+    max-width: 330px;
+    margin: rem ;
+    padding: 20px;
+
+}
+
+.form__content input:nth-child(4) {
+height: 130px;
+}
+
+#form__button {
+    background-color: var(--lightblue);
+    color: white;
+    font-weight: 700;
+    opacity: 0.8;
+}
+
+#form__button:hover {
+    opacity: 1;
+}
+
+.form__content input{
+    display:flex;
+    flex-direction: column;
+    padding: 13px;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+    width: 100%;
+}
+
+.form__content input+input {
+    margin-top: 1rem;
+}
 
 /*ANIMATION */
 
