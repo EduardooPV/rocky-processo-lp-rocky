@@ -1,3 +1,16 @@
+@media only screen and (min-width: 700px) {
+    .footer__content p {
+        font-size: 1.3rem;
+        margin-bottom: 3rem;
+    }
+    .footer__localization span {
+        font-size: 1.4rem;
+    }
+    .row{
+        margin:0;
+       }
+}
+
 @media all and (max-width: 768px) {
     html {
         font-size: 0.9rem;
@@ -15,7 +28,7 @@
         height: 30px;
     }
     .section__titles{
-        margin: 4rem 0 4rem 0;
+        margin: 4rem 0;
     }
 	
     .menu {
@@ -24,8 +37,6 @@
     }
 
     .row{
-        width: 90%;
-        margin: 0;
         display: block;
     }
 
@@ -33,14 +44,16 @@
         width: 90%;
     }
 
-    .row__card {
-        background-size: 800px;
+    .row__card__services, .row__card__diferentails {
+        background-size: 1000px;
         width: 90vw;
         margin: 30px 0;
         height: 55vh;
         max-height: 700px;
         max-width: 700px;
     }
+    .row__card__diferentails
+    
 
     .row__services__one {
         background-image: url(../img/mobile/s3\ ft1.png);
@@ -54,7 +67,7 @@
 
 
     .row__differentials__one {
-        background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/mobile/s4\ ft1.png)
+        background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/mobile/s4\ ft1.png);
     }
     .row__differentials__two {
         background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/mobile/s4\ ft2.png)
@@ -62,16 +75,21 @@
     .row__differentials__three {
         background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/mobile/s4\ ft3.png)
     }
-
+    
+    .medal-icon {
+        width: 120px;
+    }
+    
 
     .card__title {
-        padding: 1.2rem 0 1rem 0;
-        font-size: calc(1.2em + 1vw);
+        font-size: calc(2em + 1vw);
+        padding: 0;
+        margin: 1rem;
     }
 
     .card__description {
-        padding: 0.5rem 0.6rem;
-        font-size: calc(0.8em + 1vw);
+        padding: 4rem;
+        font-size: calc(0.7em + 1vw);
     }
 
     .about__description {
@@ -104,6 +122,7 @@
     .footer__number {
         font-size: 1.2rem;
         display: inline;
+        margin-top: 1rem;
     }
 
     .footer__gps {
@@ -115,25 +134,57 @@
         height: 23px;
     }
 
-    .footer__texts p {
-        font-size: 0.9rem;
+
+
+
+
+
+    
+    .form__content input:nth-child(4) {
+    height: 330px;
+    }
+    
+    #form__button {
+        opacity: 1;
+    }
+    
+    .form__content input{
+        display:flex;
+        flex-direction: column;
+        padding: 25px;
+        box-sizing: border-box;
+        font-size: 1.5rem;
+        width: 100%;
     }
 
-    .medal-icon {
-        padding: 1rem;
-    }
 }
 
-@media only screen and (min-width: 1100px) { 
-    .footer__form, .footer__contats {
-        max-width: 400px;
-        margin: 2rem 3em;
-    }
-}
 
-@media only screen and (min-width: 1400px) { 
+
+@media only screen and (min-width: 1180px) { 
     .footer__form, .footer__contats {
-        max-width: 400px;
-        margin: 2rem 5em;
+        max-width: 500px;
+        max-height: 800px;
+        height: 100vh;
+        margin-top: 2rem;
     }
+    .footer__content p {
+        font-size: 1.2rem;
+        margin-bottom: 3rem;
+    }
+
+    .footer__localization span {
+        font-size: 1.4rem;
+    }
+    .form__content input{
+        padding: 20px;
+        font-size: 1.5rem;
+    }
+    .form__content input+input {
+        margin-top: 2.5rem;
+    }
+    .form__content input:nth-child(4) {
+        height: 320px;
+        }
+
 }

@@ -16,7 +16,7 @@ body {
 
 .container {
     margin: 0 5vw;
-    max-width: 1300px;
+    max-width: 1500px;
 }
 
 article {
@@ -118,7 +118,7 @@ align-items: center
 }
 
 .modalmenuopen li {
-    margin: 1.5rem;
+    margin: 2rem;
 }
 
 
@@ -213,7 +213,8 @@ align-items: center
     font-weight: 700;
     font-size: 2.5rem;
             
-    margin: 3.5rem 0 5.5rem 0;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
 }
 /*================= Section Initial =================*/
 
@@ -296,17 +297,24 @@ align-items: center
 
 .about__description p {
     padding: 1rem;
+    font-size: 1.5rem;
 }
+
+/*================= SERVICES =================*/
+.services {
+    width: 89vw;
+}
+
 
 /*================= CARDS =================*/
 .row {
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
+    margin-bottom: 5rem;
     justify-content: space-between;
 }
 
-.row__card {
+.row__card__services {
     text-align: center;
     
     background-position: center center;
@@ -314,7 +322,7 @@ align-items: center
     border-radius: 40px;
     margin: 0 25px 25px 0;
     width: 40vw;
-    max-height: 400px;
+    height: 40vh;
     max-width: 380px;
 
     box-shadow: 1px 1px 10px;
@@ -325,6 +333,26 @@ align-items: center
 
 }
 
+.row__card__diferentails {
+    text-align: center;
+    
+    background-position: center center;
+    
+    border-radius: 40px;
+    margin: 0 25px 25px 0;
+    width: 40vw;
+    max-height: 400px;
+    max-width: 280px;
+
+    box-shadow: 1px 1px 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+
 .box-container {
     text-align: center;
 }
@@ -332,12 +360,14 @@ align-items: center
 .card__title {
     color: var(--yellow);
     font-weight: 700;
+    font-size: 2rem;
     padding: 2.5rem;
 }
 
 .card__description {
     color: white;
     font-weight: 400;
+    font-size: 1.1rem;
     padding: 1.5rem;
 }
 
@@ -357,12 +387,11 @@ align-items: center
 
 /*================= DIFFERENTAILS =================*/
 .diferentails {
+    width: 89vw;
     margin-bottom: 2rem;
 }
 .medal-icon {
-    width: 25vw;
-    max-width: 10rem;
-    min-width: 8rem;
+    width: 100px;
     padding: 3rem 0 1rem 0;
 }
 
@@ -447,11 +476,24 @@ align-items: center
     background-color: var(--yellow);
 }
 
+.footer__contats .contats__termos {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.footer__contats .contats__termos a {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.footer__contats .contats__termos a:hover {
+    color: var(--lightblue);
+}
+
 /*================= FOOTER__FORM =================*/
 .footer__form {
     background-color: #818181;
     width: 90%;
-    margin: 0rem 5rem ;
     padding: 20px;
 
 }
@@ -465,6 +507,7 @@ height: 230px;
     color: white;
     font-weight: 700;
     opacity: 0.8;
+    text-align: center;
 }
 
 #form__button:hover {
