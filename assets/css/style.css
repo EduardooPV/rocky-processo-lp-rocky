@@ -1,4 +1,5 @@
 @import url('responsive.css');
+
 /*================= Collors =================*/
 :root {
     --lightblue: #1cd4e9;
@@ -185,6 +186,29 @@ align-items: center
             transition: 0.5s;
         }
 
+
+.header__movescroll {
+    background: white;
+    transition: 0.75s;
+
+}
+
+.header__movescroll a {
+    color: black
+}
+
+.header__movescroll > li:nth-child(5) a {
+        color: white !important;
+        background-color: var(--lightblue) !important;
+
+        padding: 10px 10px;
+        margin: 0rem 1rem 0rem 0rem;
+
+        border-radius: 50px;
+        transition: 0.5s;
+}
+
+
 /*================= TITLES SECTIONS =================*/
 .section__titles {
     font-weight: 700;
@@ -318,6 +342,8 @@ align-items: center
 .row__background__three {
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/web/s3\ ft3.png)
 }
+
+
 
 /*================= DIFFERENTAILS =================*/
 .diferentails {

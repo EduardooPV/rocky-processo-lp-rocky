@@ -1,8 +1,9 @@
-
-
-@media all and (min-width: 480px) and (max-width: 768px) {
+@media all and (max-width: 768px) {
     html {
         font-size: 0.9rem;
+    }
+    .header {
+        position: absolute;
     }
     .header__menu, .header__logo--web{
         display: none;
@@ -18,9 +19,8 @@
     }
 	
     .menu {
-        display: flex;
-        align-items: center;
-        justify-content:center;  
+        display: block;
+        padding: 0.2rem;
     }
 
     .row{
@@ -36,7 +36,7 @@
     .row__card {
         background-size: 900px;
         width: 90vw;
-        margin-right: 20px;
+        margin: 10px 0;
         height: 35vh;
         max-height: 700px;
         max-width: 700px;
@@ -51,12 +51,17 @@
     .row__background__three {
         background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/mobile/s3\ ft3.png);
     }
-
-
-
-    .header {
-        position: absolute;
+    .card__title {
+        padding: 1.2rem 0 1rem 0;
     }
+
+    .card__description {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+
+
+    
 
     .footer__contats, .footer__form {
         width: 100%;
@@ -65,6 +70,10 @@
 
     .footer__contats > span p{
         font-size: 1.4rem;
+    }
+
+    .footer__form {
+        width: 100%;
     }
 
     .footer__email, 

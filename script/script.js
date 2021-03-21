@@ -18,3 +18,17 @@ const ModalMenu = {
     }
 
 }
+
+// Scroll slow motion on lick 
+
+const Scroll = {
+     scrollslowmotion() {
+        if (window.scrollY !== 0) {
+            document.querySelector('.header').classList.add('header__movescroll')
+        } else {
+            document.querySelector('.header').classList.remove('header__movescroll')
+        }
+    }
+}
+
+document.addEventListener("scroll", Scroll.scrollslowmotion, false)
