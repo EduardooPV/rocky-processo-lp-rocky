@@ -1,8 +1,10 @@
+// Functions to open and close the modal by clicking on the hamburger menu
 const ModalMenu = {
     open() {
         document
-            .querySelector('.modal__overlay.modalmenu')
+            .querySelector('.modal__overlay.menu__modal')
             .classList.add('active2')
+
             document
             .querySelector('.hamburguer')
             .classList.add('remove')
@@ -10,8 +12,9 @@ const ModalMenu = {
 
     close() {
         document
-            .querySelector('.modal__overlay.modalmenu')
+            .querySelector('.modal__overlay.menu__modal')
             .classList.remove('active2')
+
             document
             .querySelector('.hamburguer')
             .classList.remove('remove')
@@ -20,9 +23,9 @@ const ModalMenu = {
 }
 
 // Scroll slow motion on lick 
-
 const Scroll = {
      scrollslowmotion() {
+         // Reaching out
         if (window.scrollY !== 0) {
             document.querySelector('.header').classList.add('header__movescroll')
 
@@ -37,5 +40,6 @@ const Scroll = {
         }
     }
 }
+
 
 document.addEventListener("scroll", Scroll.scrollslowmotion, false)
