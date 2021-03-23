@@ -581,10 +581,6 @@ article {
     background-color: #818181;
 }
 
-.form__content input:nth-child(4) {
-height: 230px;
-}
-
 .form__content input{
     display:flex;
     flex-direction: column;
@@ -596,10 +592,13 @@ height: 230px;
     font-size: 1.1rem;   
 }
 
+    .form__content input+input {
+        margin-top: 1rem;
+    }
 
-.form__content input+input {
-    margin-top: 1rem;
-}
+    .form__content input:nth-child(4) {
+        height: 230px;
+    }
 
 .form__select {
     width: 100%;
