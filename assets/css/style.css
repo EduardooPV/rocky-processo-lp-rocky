@@ -1,10 +1,26 @@
+/*================= Import CSS files Responsiveness =================*/
 @import url('responsive.css');
 
-/*================= Collors =================*/
+/*================= Variables Collors =================*/
 :root {
     --lightblue: #1cd4e9;
     --yellow: #EFE60B;
 }
+
+/* 
+    Order of attributes
+
+    .selector {
+        Positioning (Position)
+
+        Display & Box Model (Display)
+
+        Color (Color/Background)
+
+        Text (Font-size)
+
+        Orthers (Transition)
+*/
 
 html {
     scroll-behavior: smooth;
@@ -25,9 +41,9 @@ body {
 
 article {
     display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
 }
 
 /*================= Header =================*/
@@ -286,100 +302,83 @@ align-items: center
 
 /*================= Titles of each session =================*/
 .section__titles {
-    
     margin-bottom: 6rem;
     margin-top: 4rem;
+
     font-weight: 700;
     font-size: 2.5rem;
 }
 
-/*================= ABOUT =================*/
-.about{ 
-    margin: 1rem;
-}
-
+/*================= About the company =================*/
 .about__description {
-    background-color: white;
-    animation: AnimationLeftToRight 1s 1s 1;
     padding: 2rem;
     border: 1px solid;
+    
+    background-color: white;
+
+    animation: AnimationLeftToRight 1s 1s 1;
     box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.43);
 }
 
-.about__description p {
-    padding: 1rem;
-    font-size: 1.5rem;
-}
+    .about__description p {
+        padding: 1rem;
 
-/*================= SERVICES =================*/
+        font-size: 1.5rem;
+    }
+
+/*================= Company services =================*/
 .services {
     width: 89vw;
 }
-
-
-/*================= CARDS =================*/
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 5rem;
-    justify-content: space-between;
-}
-
-.row__card__services {
-    text-align: center;
-    
-    background-position: center center;
-    
-    border-radius: 40px;
-    margin: 0 25px 25px 0;
-    width: 40vw;
-    height: 40vh;
-    max-width: 380px;
-
-    box-shadow: 1px 1px 10px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-
-}
-
-.row__card__diferentails {
-    text-align: center;
-    
-    background-position: center center;
-    
-    border-radius: 40px;
-    margin: 0 25px 25px 0;
-    width: 40vw;
-    max-height: 400px;
-    max-width: 280px;
-
-    box-shadow: 1px 1px 10px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-
-}
-
 
 .services__container {
     text-align: center;
 }
 
-.card__title {
-    color: var(--yellow);
-    font-weight: 700;
-    font-size: 2rem;
-    padding: 1.5rem;
+/*================= Services and Differentials card =================*/
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-bottom: 5rem;
 }
 
-.card__description {
-    color: white;
-    font-weight: 400;
-    font-size: 1.1rem;
-    padding: 1rem;
+
+.row__card__services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+    width: 40vw;
+    max-width: 380px;
+    height: 40vh;
+    margin: 0 25px 25px 0;
+    border-radius: 40px;
+    
+    background-position: center center;
+    
+    text-align: center;
+    box-shadow: 1px 1px 10px;
+}
+
+.row__card__diferentails {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+    width: 40vw;
+    max-width: 280px;
+    max-height: 400px;
+    margin: 0 25px 25px 0;
+    border-radius: 40px;
+    
+    background-position: center center;
+    
+    text-align: center;
+    box-shadow: 1px 1px 10px;
 }
 
 .row__services__one {
@@ -394,13 +393,30 @@ align-items: center
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/web/s3\ ft3.png)
 }
 
+.card__title {
+    padding: 1.5rem;
 
+    font-weight: 700;
+    font-size: 2rem;
 
-/*================= DIFFERENTAILS =================*/
+    color: var(--yellow);
+}
+
+.card__description {
+    padding: 1rem;
+
+    font-weight: 400;
+    font-size: 1.1rem;
+
+    color: white;
+}
+
+/*================= Company Differentials =================*/
 .diferentails {
     width: 89vw;
     margin-bottom: 2rem;
 }
+
 .medal-icon {
     width: 100px;
     padding: 3rem 0 1rem 0;
@@ -416,26 +432,24 @@ align-items: center
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/web/s4\ ft3.png)
 }
 
-
-
-/*================= FOOTER =================*/
+/*================= Footer =================*/
 .footer {
-    background-color: #191919;
-    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
     width: 100%;
 
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    color: white;
+    
+    background-color: #191919;
 }
 
-
-/*================= FOOTER__CONTATS AND DESCRIPTION =================*/
-.footer__contats {
+/*================= Footer Contact Content =================*/
+.footer__contacts {
     width: 90vw;
     margin: 2rem 5rem ;
 }
-
 
 .footer img {
     width: 100%;  
@@ -445,22 +459,24 @@ align-items: center
     margin: 2rem 0;
 }
 
-.footer__emailNumber {
+.footer__email__telephone {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
+
     margin-bottom: 1rem;
 }
 
-.footer__emailNumber img, 
-.footer__gps img{
-    margin: 0 0.8rem -0.2rem 0;
-}
+    .footer__email__telephone img, 
+    .footer__gps img{
+        margin: 0 0.8rem -0.2rem 0;
+    }
 
 .footer__email, 
 .footer__number {
-    font-size: 0.9rem;
     display: inline;
+
+    font-size: 0.9rem;
 }
 
 .footer__gps {
@@ -468,8 +484,9 @@ align-items: center
 }
 
 .footer__texts p {
-    font-size: 0.7rem;
     margin-bottom: 1rem;
+
+    font-size: 0.7rem;
 }
 
 .contats__descrtiption--yellow {
@@ -481,65 +498,74 @@ align-items: center
     color: var(--lightblue)
 }
 
+/*================= Upper and lower split bar =================*/
 #yellow {
     width: 100%;
     height: 50px;
+
     background-color: var(--yellow);
 }
 
-.footer__contats .contats__termos {
+.footer__contacts .contats__termos {
     margin-top: 3rem;
+
     text-align: center;
 }
 
-.footer__contats .contats__termos a {
-    font-size: 1.5rem;
-    color: white;
-}
+    .footer__contacts .contats__termos a {
+        font-size: 1.5rem;
+        
+        color: white;
+    }
 
-.footer__contats .contats__termos a:hover {
-    color: var(--lightblue);
-}
+    .footer__contacts .contats__termos a:hover {
+        color: var(--lightblue);
+    }
 
-/*================= FOOTER__FORM =================*/
+/*================= Footer Form =================*/
 .footer__form {
-    background-color: #818181;
     width: 90%;
     padding: 20px;
-
+    
+    background-color: #818181;
 }
 
 .form__content input:nth-child(4) {
 height: 230px;
 }
 
-#form__button {
-    background-color: var(--lightblue);
-    color: white;
-    font-weight: 700;
-    opacity: 0.8;
-    text-align: center;
-}
-
-#form__button:hover {
-    opacity: 1;
-}
-
 .form__content input{
     display:flex;
     flex-direction: column;
+
+    width: 100%;
     padding: 13px;
     box-sizing: border-box;
-    font-size: 1.1rem;
-    width: 100%;
+    
+    font-size: 1.1rem;   
 }
 
 .form__content input+input {
     margin-top: 1rem;
 }
 
-/*ANIMATION */
+#form__button {
+    font-weight: 700;
 
+    color: white;
+    background-color: var(--lightblue);
+
+    opacity: 0.8;
+    text-align: center;
+}
+
+    #form__button:hover {
+        opacity: 1;
+    }
+
+/*================= Animation Content Initial =================*/
+
+/* Text principal (FULL DIGITAL PERFORMANCE */
 @keyframes AnimationLeftToRight{
     0%{
         transform: translate(-100vw)
@@ -550,6 +576,7 @@ height: 230px;
     }
 }
 
+/* Description (Lorem) */
 @keyframes AnimationRightToLeft{
     0%{
         transform: translate(100vw)
@@ -560,6 +587,7 @@ height: 230px;
     }
 }
 
+/* Button (ENTRE EM CONTATO AGORA) */
 @keyframes AnimationDownToUp{
     0%{
         transform: translateY(100vh)
@@ -568,4 +596,8 @@ height: 230px;
     100%{
         transform: translate(0)
     }
+}
+
+.animar {
+    animation: AnimationLeftToRight 1s 1s 1;
 }

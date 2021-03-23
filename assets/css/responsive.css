@@ -1,5 +1,5 @@
 @media only screen and (min-width: 700px) {
-    .footer__content p {
+    .footer__content__contact p {
         font-size: 1.3rem;
         margin-bottom: 3rem;
     }
@@ -100,6 +100,10 @@
         padding: 0.5rem;
     }
 
+    .about__description p {
+        font-size: calc(0.8em + 1vw);;
+    }
+
     .header__movescroll {
         display: none;
     }
@@ -107,14 +111,14 @@
 
 
 
-    .footer__contats, .footer__form {
+    .footer__contacts, .footer__form {
         width: 100%;
         max-width: none;
         margin: 0;
         padding: 1.5rem;
     }
 
-    .footer__contats > span p{
+    .footer__contacts > span p{
         font-size: 1.4rem;
     }
 
@@ -172,13 +176,13 @@
 
 
 @media only screen and (min-width: 1180px) { 
-    .footer__form, .footer__contats {
+    .footer__form, .footer__contacts {
         max-width: 500px;
         max-height: 800px;
         height: 100vh;
         margin-top: 2rem;
     }
-    .footer__content p {
+    .footer__content__contact p {
         font-size: 1.2rem;
         margin-bottom: 3rem;
     }
