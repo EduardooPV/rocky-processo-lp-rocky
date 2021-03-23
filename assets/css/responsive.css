@@ -9,6 +9,10 @@
     .row{
         margin:0;
        }
+       .form__content input:focus{
+        border-left: 1rem solid #EFE60B;
+        transition: .5s;
+    }
 }
 
 @media all and (max-width: 768px) {
@@ -171,6 +175,13 @@
         width: 100%;
     }
 
+    .form__select {
+        margin: 1rem 0;
+    }
+    .form__content input:focus{
+        border-left: 1rem solid #EFE60B;
+        transition: .5s;
+    }
 }
 
 
@@ -179,7 +190,6 @@
     .footer__form, .footer__contacts {
         max-width: 500px;
         max-height: 800px;
-        height: 100vh;
         margin-top: 2rem;
     }
     .footer__content__contact p {
@@ -198,7 +208,16 @@
         margin-top: 2.5rem;
     }
     .form__content input:nth-child(4) {
-        height: 320px;
+        height: 20rem;
         }
 
+    .form__select {
+        margin: 2rem 0;
+        padding: 20px;
+    }
+
+    .form__content input:focus{
+        border-left: 1rem solid #EFE60B;
+        transition: .5s;
+    }
 }

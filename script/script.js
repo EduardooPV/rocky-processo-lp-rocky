@@ -39,30 +39,37 @@ const Scroll = {
             img.setAttribute('src', './assets/img/web/logo.png')
         }
     }
-}
 
+
+}
 
 document.addEventListener("scroll", Scroll.scrollslowmotion, false)
 
 
-const throttle = _.throttle;
+// "About" presentation animation
+const algo__about = document.querySelectorAll('[data-animation]')
+const animationClass = 'animate'
+const heightServices = document.querySelector('.services')
 
+function animationScroll() {
+    const windowTop = window.pageYOffset + ((window.innerHeight * 3) / 4)
 
-const players = 
-    Array.from(document.querySelectorAll('.js-play-on-screen'));
-
-
-function isOnScreen(el) {
-    let rect = el.getBoundingClientRect() 
-    return rect.top > 0 && rect.bottom < window.innerHeight;
+    algo__about.forEach(function(element) {
+        //Setting height to close the about
+        const sum = (heightServices.offsetTop / 10) * 9
+        if (windowTop > element.offsetTop && window.pageYOffset <sum) {
+            element.classList.add(animationClass)
+        } else {
+            element.classList.remove(animationClass)
+        }
+    })
 }
 
-function playAnimation(el) {
-    if(isOnScreen(el)) el.style.animationPlayState = 'running';
+animationScroll()
+
+// Check if you have Data-animation on the screen
+if (algo__about.length) {
+    window.addEventListener('scroll', function(){
+        animationScroll()
+})
 }
-
-
-const render = throttle(() => players.forEach(playAnimation), 150);
-
-render();
-window.addEventListener('scroll', render);

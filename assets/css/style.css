@@ -58,6 +58,8 @@ article {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    max-width: unset;
 }
 
 .header__logo {
@@ -279,12 +281,12 @@ article {
 
 /*================= Button initial (CONTATO) =================*/
 .button {
-    text-decoration: none;
-    
     display: inline-block;
+    
     padding: 1.2rem;
     margin-top: 4rem;
     border-radius: 50px;
+    text-decoration: none;
     
     background: var(--lightblue);
     color: white;
@@ -296,6 +298,8 @@ article {
 }
 
     .button:hover {
+        border: .5rem solid;
+        border-color: var(--yellow);
         opacity: 1;
         transition: 0.5s;
     }
@@ -326,6 +330,21 @@ article {
         font-size: 1.5rem;
     }
 
+/*================= About animation =================*/
+[data-animation] {
+    opacity: 0;
+    transition: 1.5s;
+}
+
+[data-animation="left"] {
+    transform: translate3d(-100vw, 0px, 0px);
+}
+
+[data-animation].animate {
+    opacity: 1;
+    transform: translate3d(0px , 0px, 0px);
+}
+
 /*================= Company services =================*/
 .services {
     width: 89vw;
@@ -354,14 +373,32 @@ article {
     width: 40vw;
     max-width: 380px;
     height: 40vh;
+    min-height: 400px;
     margin: 0 25px 25px 0;
     border-radius: 40px;
+    border: 2px solid var(--yellow);
     
     background-position: center center;
     
     text-align: center;
-    box-shadow: 1px 1px 10px;
+    
+    box-shadow: 20px 20px 15px rgba(0, 0, 0, 0.253), 0 3px 6px rgba(0,0,0,0.24);
+    transition:.2s all; 
 }
+  
+    .row:hover .row__card__services{
+        opacity:.5;
+        filter:blur(3px);
+        transform: scale(.98);
+        box-shadow:none;
+    }
+
+    .row:hover .row__card__services:hover{
+        opacity:1;
+        transform:scale(1);
+        filter:blur(0px);
+        box-shadow:0 8px 20px 0px rgba(0,0,0,0.125);
+    }
 
 .row__card__diferentails {
     display: flex;
@@ -371,15 +408,29 @@ article {
     
     width: 40vw;
     max-width: 280px;
-    max-height: 400px;
+    height: 450px;
     margin: 0 25px 25px 0;
     border-radius: 40px;
+
+    border: 2px solid var(--yellow);
     
     background-position: center center;
     
     text-align: center;
-    box-shadow: 1px 1px 10px;
-}
+
+    box-shadow: 20px 20px 15px rgba(0, 0, 0, 0.253), 0 3px 6px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  }
+  
+    .row__card__diferentails:hover{
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        animation-name: CardBorder;
+        animation-duration: .25s;
+      
+        border-left: 15px solid var(--yellow);
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
 
 .row__services__one {
     background-image: url(../img/web/s3\ ft1.png);
@@ -545,21 +596,33 @@ height: 230px;
     font-size: 1.1rem;   
 }
 
+
 .form__content input+input {
     margin-top: 1rem;
 }
 
-#form__button {
-    font-weight: 700;
+.form__select {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 13px;
 
+    font-size: 1.3rem;
+}
+
+#form__button {
+    font-weight: 800;
+    
     color: white;
     background-color: var(--lightblue);
 
     opacity: 0.8;
-    text-align: center;
+    cursor: pointer;
 }
 
     #form__button:hover {
+        transition: .5s;
+        border-left: 1rem solid;
+        border-color: var(--yellow);
         opacity: 1;
     }
 
@@ -598,6 +661,11 @@ height: 230px;
     }
 }
 
-.animar {
-    animation: AnimationLeftToRight 1s 1s 1;
+/*================= Animation Card =================*/
+@keyframes CardBorder {
+    0%   {border-left: 1px solid #ffffff;}
+    25%  {border-left: 5px solid rgb(241, 241, 110)}
+    50%  {border-left: 10px solid rgb(255, 255, 76)}
+    100% {border-left: 15px solid var(--yellow)}
 }
+

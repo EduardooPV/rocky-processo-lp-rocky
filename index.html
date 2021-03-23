@@ -24,6 +24,7 @@
 
 <body>
 
+    
     <!-- =========== Menu Hamburguer (Only phone resolution) =========== -->
     <div class="menu__hamburguer">
 
@@ -114,7 +115,7 @@
         </section>
 
         <!-- =========== Content About (Important information about a rocky) =========== -->
-        <section id="sobre" class="about container">
+        <section id="sobre" data-animation="left" class="about container">
 
             <h2 class="section__titles">
                 SOBRE
@@ -286,9 +287,15 @@
                 <form class="form__content" method="post" action="">
                     <input id="nome" type="text" required name=nome placeholder="Nome" />
                     <input id="email" type="text" required name=email placeholder="E-mail">
-                    <input type="text" type="text" required name=investimento placeholder="Investimento mensal">
+                    <select name="checkbox-phase" class="form__select" aria-invalid="false"  id="">
+                        <option value> Investimento mensal em Mídia Online</option>
+                        <option value="De R$ 0 a R$ 49.999,99">De R$ 0 a R$ 50.000,00</option>
+                        <option value="Entre R$ 50.000,00 a R$ 99.999,99">Entre R$ 50.000,00 a R$ 99.999,99</option>
+                        <option value="Entre R$ 100.000,00 a R$ 199.999,99">Entre R$ 100.000,00 a R$ 199.999,99</option>
+                        <option value="Mais de R$ 200.000,00">Mais de R$ 200.000,00</option>
+                    </select>
                     <input type="text" type="text" required name=mensagem placeholder="Mensagem">
-                    <input id="form__button" type="textarea" value="ENVIAR MENSSAGEM">
+                    <input id="form__button" type="submit" value="ENVIAR MENSAGEM">
                 </form>
 
             </div>
