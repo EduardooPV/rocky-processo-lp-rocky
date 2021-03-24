@@ -6,10 +6,12 @@
 
 ## Contendo: 
  - **Header**:
-    - Simples porem altamente agradável.
-    - Efeitos de transição com as principais informações.
     - Contendo um header (dinâmico, muda ao rolar a página(ScrollY)).
     - _(Menu Hamburguer para Mobile)_.
+    
+ - **Tela inicial**:
+    - Simples porem altamente agradável.
+    - Efeitos de transição com as principais informações.
     
  - **Section descrição**:
     - Contando um pouco sobre a empresa.
