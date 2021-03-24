@@ -1,8 +1,15 @@
 <h1 align="center"> Template site ROCKY</h1>
 
-#### Projeto criado utilizando boas práticas de SEO (_![Search Engine Optimization](https://css-tricks.com/bem-101/)_) do HTML e metodoligia **BEM(_Block - Building - Feature_) do CSS**
+#### Projeto criado utilizando boas práticas de SEO (_[Search Engine Optimization](https://rockcontent.com/br/blog/o-que-e-seo/#:~:text=SEO%20significa%20Search%20Engine%20Optimization,para%20um%20site%20ou%20blog.)_) do HTML e metodoligia **BEM(_[Block - Building - Feature](https://css-tricks.com/bem-101/_)_) do CSS**
 #### Como objetivo principal do desafio, recriar o site da **ROCKY** conforme a imagem, na versão 💻 [Desktop](https://xd.adobe.com/view/353c26e5-a732-4006-9baa-3d162bcf519a-606f/?fullscreen) e 📱 [Mobile](https://xd.adobe.com/view/92a21cf8-858d-441c-bbfc-278714787c57-c7f1/?fullscreen)
 
+### Linguagens utilizadas:
+
+<p class="row">
+  <p> <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" width="34px"> - JavaScript </p>
+  <p> <img src="https://logodownload.org/wp-content/uploads/2016/10/html5-logo-8.png" width="30px"> - HTML5 </p>
+  <p> <img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/121-css3-512.png" width="34px"> - CSS </p>
+</p> 
 
 ## Contendo: 
  - **Header**:
@@ -27,7 +34,7 @@
     
  - **Footer**:
      - Informações de contato
-     - Fomulário. 
+     - Formulário. 
    
   - **Responsividade.**
 
@@ -40,22 +47,6 @@
   - [X] Animações Button/Input
   - [X] Funções em JavaScript
     - Scroll / Modal / Collapsible
-
-## Obstáculos e dificuldades que se destacaram:
-**Cards**: 
- Estava com dificuldades, pois tentei utilizar a mesma classse nas duas sessão _(Serviços e Diferenciais)_ porém tive que criar duas classes distintas.
-
-**Responsividade**:
- Foi um grande desafio, pois eu ainda não estava muito familiarizado com tais tecnicas.
- 
-**Menu Hamburuger**: 
- Tive alguns problemas com o Collapsible referente a especificidade no CSS.
- 
- **Animação/Transição**:
-  Foi dificil achar/fazer uma animação boa que combinasse com a temática do site.
- 
- **CSS**:
-  Alguns problemas pequenos com margin, para alinhar todo o site.
 
 ### Visite o site: [CLICANDO AQUI!](https://project-rocky.netlify.app/)
 
