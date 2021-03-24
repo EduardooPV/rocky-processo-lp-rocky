@@ -117,13 +117,13 @@
         margin: 1rem;
         padding: 0.5rem;
         
-        font-size: calc(1.5em + 1vw);
+        font-size: calc(1.0em + 1vw);
     }
 
     .card__description {
         padding: 1rem;
         
-        font-size: calc(0.7em + 1vw);
+        font-size: calc(0.5em + 1vw);
     }
 
     /*================= Footer =================*/
