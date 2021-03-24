@@ -24,7 +24,7 @@
 
 <body>
 
-    
+
     <!-- =========== Menu Hamburguer (Only phone resolution) =========== -->
     <div class="menu__hamburguer">
 
@@ -43,23 +43,45 @@
                 <ul>
                     <li id="modal__img"><img onclick="ModalMenu.close()" src="assets/img/global/exit.png" width="50px"
                             alt=""></li>
-                    <li><a onclick="ModalMenu.close()" href="#home">HOME</a></li>
-                    <li><a onclick="ModalMenu.close()" href="#sobre"><s>SOBRE A ROCKY</s></a></li>
-                    <li><a onclick="ModalMenu.close()" href="#servicos"><s>SERVIÇOS</s></a></li>
-                    <li><a onclick="ModalMenu.close()" href="#diferenciais"><s>DIFERENCIAIS</s></a></li>
-                    <li><a onclick="ModalMenu.close()" href="#trabalhe-conosco"><s>TRABALHE CONOSCO</s></a></li>
-                    <li><a onclick="ModalMenu.close()" href="#contato"><s>CONTATO</s></a></li>
-                    <li><a onclick="ModalMenu.close()" href="https://blog.rocky.ag/pagina/1" target="_blank"><s>BLOG</s></a></li>
+                    <li><a onclick="ModalMenu.close()" href="#">HOME</a></li>
+                    <li><a onclick="ModalMenu.close()" href="#sobre">SOBRE A ROCKY</a></li>
+                    <li>
+                        <!-- Collapsible when clicking on services-->
+                        <button type="button" class="collapsible">SERVIÇOS</button>
+                        <div class="collapsible__content">
+                            <ul onclick="ModalMenu.close()" id="collapsible__content__description">
+                                <li><a href="#servicos">LOREM IPSUM</a></li>
+                                <li><a href="#servicos">LOREM IPSUM</a></li>
+                                <li><a href="#servicos">LOREM IPSUM</a></li>
+                                <li><a href="#servicos">LOREM IPSUM</a></li>
+                                <li><a href="#servicos">LOREM IPSUM</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><button type="button" class="collapsible">DIFERENCIAIS</button>
+                        <div class="collapsible__content">
+                            <ul onclick="ModalMenu.close()" id="collapsible__content__description">
+                                <li><a href="#diferenciais">LOREM IPSUM</a></li>
+                                <li><a href="#diferenciais">LOREM IPSUM</a></li>
+                                <li><a href="#diferenciais">LOREM IPSUM</a></li>
+                                <li><a href="#diferenciais">LOREM IPSUM</a></li>
+                                <li><a href="#diferenciais">LOREM IPSUM</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a onclick="ModalMenu.close()" href="#">TRABALHE CONOSCO</a></li>
+                    <li><a onclick="ModalMenu.close()" href="#contato">CONTATO</a></li>
+                    <li><a onclick="ModalMenu.close()" href="#">BLOG</a></li>
                 </ul>
             </div>
         </div>
 
     </div>
-    
+
     <!-- =========== Arrow to go back to the beginning =========== -->
     <div class="arrow">
-        <a href="#"> 
-            <img class="arrow__up" src="assets/img/mobile/arrow-up.jpg" alt="Arrow to go back to the beginning">
+        <a href="#">
+            <img class="arrow__up" src="assets/img/mobile/arrow-up" alt="Arrow to go back to the beginning">
         </a>
     </div>
     <!-- =========== Header (Logo Image and Navbar) =========== -->
@@ -68,7 +90,8 @@
 
             <div class="header__logo">
                 <a href="#" title="Link home page">
-                    <img id="img-logo" class="header__logo--modify" src="assets/img/web/logo.png" alt="Logo Rocky" width="170" height="40">
+                    <img id="img-logo" class="header__logo--modify" src="assets/img/web/logo.png" alt="Logo Rocky"
+                        width="170" height="40">
                 </a>
             </div>
 
@@ -89,7 +112,7 @@
                     <a href="#contato">CONTATO</a>
                 </li>
                 <li>
-                    <a rel="canonical" href="https://blog.rocky.ag/pagina/1" rel="external nofollow" target="_blank">BLOG</a>
+                    <a rel="canonical" href="#" target="_blank">BLOG</a>
                 </li>
             </ul>
 
@@ -100,7 +123,7 @@
         <!-- =========== Content initial (Presentation) =========== -->
         <section class="initial ">
             <div class="initial__content">
-                
+
                 <h1 class="initial__title">FULL DIGITAL PERFORMANCE</h1>
 
                 <div class="initial__description">
@@ -134,7 +157,7 @@
                         facilis distinctio dolor aut error eveniet repellat!
                         Porro officiis, nihil sunt, consectetur quos debitis sed suscipit alias, dolorem magnam
                         explicabo! Dolorem odio et ipsum, maiores, in fugit blanditiis animi sed error voluptatibus
-                    harum quia amet debitis quo?</strong></p>
+                        harum quia amet debitis quo?</strong></p>
 
                 <p> Tenetur fugit optio, repellat exercitationem, obcaecati ut provident reprehenderit aperiam natus
                     laboriosam quibusdam quod. Pariatur, mollitia? Quisquam repellendus nisi vitae molestiae,
@@ -165,6 +188,8 @@
                         <p class="card__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam,
                             veniam ipsa autem deleniti quae dolorum explicabo sapiente. Excepturi quis exercitationem
                             deleniti, molestias minus nisi earum, qui pariatur autem quaerat laboriosam.</p>
+                        <p class="card__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. debitis!
+                            Unde reprehenderit temporibus enim id nihil nam fuga quibusdam.</p>
                     </div>
 
                     <div class="row__card__services row__services__two">
@@ -175,6 +200,8 @@
                         <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
                             ipsum consequatur expedita facere molestias, cum dolorem. Tempore, laborum iure cupiditate
                             atque voluptate temporibus consequuntur natus, optio, voluptates voluptas quod nihil?</p>
+                        <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+                            perferendis assumenda asperiores atque nisi debitis corrupti tempora?</p>
                         </p>
                     </div>
 
@@ -187,6 +214,8 @@
                         <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas fuga
                             odio nihil dolorem repudiandae cupiditate cum odit dolorum quaerat magni accusamus harum
                             consequuntur, iste in deleniti ex dolores. Accusamus, aut?</p>
+                        <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore,
+                            sit totam beatae consequatur velit iusto quim?</p>
                     </div>
 
                 </div>
@@ -255,7 +284,8 @@
                         </div>
                         <div class="footer__gps">
                             <img src="assets/img/global/gps.png" style="width: 1.4rem;" alt="Icon Gps">
-                            <span>R. Romeu do Nascimento, 247 - Jardim Portal da Colina, Sorocaba - SP 18047-410 - 2º andar</span>
+                            <span>R. Romeu do Nascimento, 247 - Jardim Portal da Colina, Sorocaba - SP 18047-410 - 2º
+                                andar</span>
                         </div>
 
                     </div>
@@ -275,7 +305,8 @@
                             nesciunt
                             eum ad. Blanditiis quis quos accusantium non.</p>
 
-                        <p class="contats__termos"><a rel="canonical" href="https://rocky.ag/termo-de-uso-e-politicas-de-privacidade/" rel="external nofollow" target="_blank">Termos de uso e Politícas de Privacidade</a></p>
+                        <p class="contats__termos"><a rel="canonical" href="#">Termos de uso e Politícas de
+                                Privacidade</a></p>
 
                     </div>
                 </div>
@@ -287,7 +318,7 @@
                 <form class="form__content" method="post" action="">
                     <input id="nome" type="text" required name=nome placeholder="Nome" />
                     <input id="email" type="text" required name=email placeholder="E-mail">
-                    <select name="checkbox-phase" class="form__select" aria-invalid="false"  id="">
+                    <select name="checkbox-phase" class="form__select" aria-invalid="false" id="">
                         <option value> Investimento mensal em Mídia Online</option>
                         <option value="De R$ 0 a R$ 49.999,99">De R$ 0 a R$ 50.000,00</option>
                         <option value="Entre R$ 50.000,00 a R$ 99.999,99">Entre R$ 50.000,00 a R$ 99.999,99</option>

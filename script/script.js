@@ -1,13 +1,32 @@
+// Function to expand the "Services" and "Differential" items in the hamburger menu
+let coll = document.getElementsByClassName("collapsible")
+let i 
+
+for (i =  0; i <coll.length; i++ ) {
+    // Creating the event by clicking and running the function
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active")
+        let collapsible__content = this.nextElementSibling
+
+        //Checking if the item has already been expanded
+        if (collapsible__content.style.display === "block") {
+            collapsible__content.style.display = "none"
+        } else {
+            collapsible__content.style.display = "block"
+        }
+    })
+}
+
 // Functions to open and close the modal by clicking on the hamburger menu
 const ModalMenu = {
     open() {
-        document.querySelector('.modal__overlay.menu__modal').classList.add('active2')
-
+        document.querySelector('.modal__overlay.menu__modal').classList.add('active')
+        // 
         document.querySelector('.hamburguer').classList.add('remove')
     },
 
     close() {
-        document.querySelector('.modal__overlay.menu__modal').classList.remove('active2')
+        document.querySelector('.modal__overlay.menu__modal').classList.remove('active')
         
         document.querySelector('.hamburguer').classList.remove('remove')
     }

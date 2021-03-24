@@ -1,68 +1,91 @@
-@media only screen and (min-width: 700px) {
-    .footer__content__contact p {
-        font-size: 1.3rem;
-        margin-bottom: 3rem;
-    }
-    .footer__localization span {
-        font-size: 1.4rem;
-    }
-    .row{
-        margin:0;
-       }
-       .form__content input:focus{
-        border-left: 1rem solid #EFE60B;
-        transition: .5s;
-    }
-}
-
-@media all and (max-width: 768px) {
-    html {
-        font-size: 0.9rem;
-    }
-    .header {
-        position: absolute;
-    }
+@media only screen and (max-width: 768px) {
+    /*================= HEADER =================*/
+    /* Removing header web*/
     .header__menu, .header__logo--web{
         display: none;
     }
+    
+    .header__movescroll {
+        display: none;
+    }
+    
+    .header {
+        position: absolute;
+    }
+
+    /* Putting mobile menu */
+    .menu {
+        display: block;
+        z-index: 2;
+    }
+    
+    .menu__modal__open {
+        width: 400px;
+    }
+
+    .menu__modal__open li,
+    .menu__modal__open button {
+        font-size: 2rem;
+    }
+    
+    menu__modal__open button {
+        font-size 2rem;
+    }
+    /* Adjusting the logo photo */
     .header__logo--modify {
-        background: url(../img/mobile/logo.png) center center no-repeat;
+        display: block;
         width: 170px;
         height: 40px;
-        text-align: center;
         margin: 0.2rem auto;
-        display: block;
         padding: 20px;
+
+        background: url(../img/mobile/logo.png) center center no-repeat;
+
+        text-align: center;
     }
+
+    /*Setting arrow to return to the beginning*/
+    .arrow {
+        position: absolute;
+    }
+    .arrow__up {
+        display: block;
+        z-index: 1;
+    }
+
+    /*================= About descripition =================*/
+    .about__description p {
+        padding: 0.5rem;
+
+        font-size: calc(0.8em + 1vw);;
+    }
+
+   
+
+    /*================= Titles of each session =================*/
     .section__titles{
         margin: 4rem 0;
     }
 	
-    .menu {
-        background-color: transparent;
-        display: block;
-        z-index: 2;
-    }
-
+    /*================= Services and Differentials card =================*/
     .row{
         display: block;
     }
 
-    .container {
-        width: 90%;
-    }
-
+    /*Adjusting the cards on the screen*/
     .row__card__services, .row__card__diferentails {
-        background-size: 1000px;
         width: 90vw;
-        margin: 30px 0;
+        max-width: 700px;
         height: 55vh;
         max-height: 700px;
-        max-width: 700px;
-    }
-    .row__card__diferentails
-    
+        margin: 30px 0;
+        
+        background-size: 1000px;
 
+        font-size: 1.6rem;
+    }
+
+    /*Changing the photos on the services card*/
     .row__services__one {
         background-image: url(../img/mobile/s3\ ft1.png);
     }
@@ -72,8 +95,9 @@
     .row__services__three {
         background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/mobile/s3\ ft3.png);
     }
-
-
+    
+    
+    /*Changing the photos on the differentials card*/
     .row__differentials__one {
         background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/mobile/s4\ ft1.png);
     }
@@ -88,80 +112,56 @@
         width: 120px;
     }
     
-
+    /*Changing informations card*/
     .card__title {
-        font-size: calc(2em + 1vw);
-        padding: 0;
         margin: 1rem;
+        padding: 0.5rem;
+        
+        font-size: calc(1.5em + 1vw);
     }
 
     .card__description {
-        padding: 0 2rem;
+        padding: 1rem;
+        
         font-size: calc(0.7em + 1vw);
     }
 
-    .about__description {
-        padding: 0.5rem;
-    }
+    /*================= Footer =================*/
 
-    .about__description p {
-        font-size: calc(0.8em + 1vw);;
-    }
-
-    .header__movescroll {
-        display: none;
-    }
-    
-
-
-
+    /*Footer Contacts*/
     .footer__contacts, .footer__form {
         width: 100%;
-        max-width: none;
         margin: 0;
+
         padding: 1.5rem;
     }
 
-    .footer__contacts > span p{
-        font-size: 1.4rem;
+        .footer__contacts > span p{
+            font-size: 1.4rem;
+        }
+
+    .footer__email, 
+    .footer__number {
+        display: inline;
+        margin-top: 1rem;
+
+        font-size: 1.2rem;
     }
+
+    .footer__gps {
+        display: flex;
+        font-size: 1.2rem;
+    }
+
+        .footer__gps img {
+            height: 23px;
+        }
 
     .footer__form {
         width: 100%;
     }
 
-    .footer__email, 
-    .footer__number {
-        font-size: 1.2rem;
-        display: inline;
-        margin-top: 1rem;
-    }
-
-    .footer__gps {
-        font-size: 1.2rem;
-        display: flex;
-    }
-
-    .footer__gps img{
-        height: 23px;
-    }
-
-
-
-    .arrow {
-        position: absolute;
-    }
-    .arrow__up {
-        display: block;
-        z-index: 1;
-    }
-
-
-    
-    .form__content input:nth-child(4) {
-    height: 330px;
-    }
-    
+    /*Footer Form*/
     #form__button {
         opacity: 1;
     }
@@ -169,47 +169,65 @@
     .form__content input{
         display:flex;
         flex-direction: column;
-        padding: 25px;
-        box-sizing: border-box;
-        font-size: 1.5rem;
         width: 100%;
+        padding: 25px;
+
+        font-size: 1.5rem;
+
+        box-sizing: border-box;
     }
+
+        .form__content input:nth-child(4) {
+            height: 330px;
+        }
+
+        .form__content input:focus{
+            border-left: 1rem solid #EFE60B;
+            transition: .5s;
+        }
 
     .form__select {
         margin: 1rem 0;
     }
-    .form__content input:focus{
-        border-left: 1rem solid #EFE60B;
-        transition: .5s;
-    }
+    
 }
 
-
-
-@media only screen and (min-width: 1180px) { 
+@media only screen and (min-width: 1330px) { 
+    
+    /*================= Footer =================*/
+    /*Footer contact*/
     .footer__form, .footer__contacts {
         max-width: 500px;
         max-height: 800px;
         margin-top: 2rem;
     }
-    .footer__content__contact p {
-        font-size: 1.2rem;
-        margin-bottom: 3rem;
-    }
+   
+        .footer__content__contact p {
+            margin-bottom: 3rem;
+            
+            font-size: 1.2rem;
+        }
 
-    .footer__localization span {
-        font-size: 1.4rem;
+        .footer__localization span {
+            font-size: 1.4rem;
+        }
+
+    /*Footer Form*/
+    .footer__form {
+        margin-left: 10vw;
     }
+    
     .form__content input{
         padding: 20px;
         font-size: 1.5rem;
     }
+    
     .form__content input+input {
         margin-top: 2.5rem;
     }
     .form__content input:nth-child(4) {
         height: 20rem;
-        }
+    }
 
     .form__select {
         margin: 2rem 0;
