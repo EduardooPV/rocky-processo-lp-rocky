@@ -3,13 +3,12 @@
 #### Projeto criado utilizando boas práticas de **SEO (_Search Engine Optimization_) do HTML** e metodoligia **BEM(_Block - Building - Feature_) do CSS**
 #### Como objetivo principal do desafio, recriar o site da **ROCKY** conforme a imagem, na versão 💻 [Desktop](https://xd.adobe.com/view/353c26e5-a732-4006-9baa-3d162bcf519a-606f/?fullscreen) e 📱 [Mobile](https://xd.adobe.com/view/92a21cf8-858d-441c-bbfc-278714787c57-c7f1/?fullscreen)
 
-<h2 align="center" >🚧 Projeto em construção... 🚧</h2>
 
 ## Contendo: 
  - Header:
     - Simples porem altamente agradável.
     - Efeitos de transição com as principais informações.
-    - Contendo um header (dinâmico, muda ao rolar a página).
+    - Contendo um header (dinâmico, muda ao rolar a página(ScrollY)).
     - _(Menu Hamburguer para Mobile)_.
     
  - Section descrição:
@@ -37,6 +36,8 @@
   - [X] Transições de seções 
   - [X] Animação/transição **CARDS** 
   - [X] Animações Button/Input
+  - [X] Funções em JavaScript
+    - Scroll / Modal / Collapsible
 
 ### Visite o site: [CLICANDO AQUI!](https://project-rocky.netlify.app/)
 
