@@ -1,6 +1,6 @@
 <h1 align="center"> Template site ROCKY</h1>
 
-#### Projeto criado utilizando boas práticas de **SEO (_Search Engine Optimization_) do HTML** e metodoligia **BEM(_Block - Building - Feature_) do CSS**
+#### Projeto criado utilizando boas práticas de SEO (_![Search Engine Optimization](https://css-tricks.com/bem-101/)_) do HTML e metodoligia **BEM(_Block - Building - Feature_) do CSS**
 #### Como objetivo principal do desafio, recriar o site da **ROCKY** conforme a imagem, na versão 💻 [Desktop](https://xd.adobe.com/view/353c26e5-a732-4006-9baa-3d162bcf519a-606f/?fullscreen) e 📱 [Mobile](https://xd.adobe.com/view/92a21cf8-858d-441c-bbfc-278714787c57-c7f1/?fullscreen)
 
 
