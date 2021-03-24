@@ -5,29 +5,29 @@
 
 
 ## Contendo: 
- - Header:
+ - **Header**:
     - Simples porem altamente agradável.
     - Efeitos de transição com as principais informações.
     - Contendo um header (dinâmico, muda ao rolar a página(ScrollY)).
     - _(Menu Hamburguer para Mobile)_.
     
- - Section descrição:
+ - **Section descrição**:
     - Contando um pouco sobre a empresa.
     - Contendo efeito de transição.
     
- - Section serviços:
+ - **Section serviços**:
     - Destaque dos melhores serviços feito pela empresa.
     - Contendo animação o passar o mouse nos cards.
     
- - Section diferencial:
+ - **Section diferencial**:
     - Mostrando o diferencial da corporação.
     - Contendo animação/transição ao passar o mouse nos cards.
     
- - Footer:
+ - **Footer**:
      - Informações de contato
      - Fomulário. 
    
-  - Responsividade.
+  - **Responsividade.**
 
 ## Adicionais (Por conta própria): 
   - [x] Transição de apresentação da tela inicial.
@@ -38,6 +38,22 @@
   - [X] Animações Button/Input
   - [X] Funções em JavaScript
     - Scroll / Modal / Collapsible
+
+## Obstáculos e dificuldades que se destacaram:
+**Cards**: 
+ Estava com dificuldades, pois tentei utilizar a mesma classse nas duas sessão _(Serviços e Diferenciais)_ porém tive que criar duas classes distintas.
+
+**Responsividade**:
+ Foi um grande desafio, pois eu ainda não estava muito familiarizado com tais tecnicas.
+ 
+**Menu Hamburuger**: 
+ Tive alguns problemas com o Collapsible referente a especificidade no CSS.
+ 
+ **Animação/Transição**:
+  Foi dificil achar/fazer uma animação boa que combinasse com a temática do site.
+ 
+ **CSS**:
+  Alguns problemas pequenos com margin, para alinhar todo o site.
 
 ### Visite o site: [CLICANDO AQUI!](https://project-rocky.netlify.app/)
 
@@ -53,4 +69,4 @@
 
 <h1 align='center'>📌 PREVIEW -MOBILE- 📌</h1> </br>
 
-![image](https://user-images.githubusercontent.com/69824782/112097716-43d3e600-8b7f-11eb-819d-90c9e7dcd2c3.png)
+![image](https://user-images.githubusercontent.com/69824782/112384507-46445600-8ccd-11eb-8044-9a2237243a52.png)
